@@ -1122,6 +1122,7 @@ a {
     
     font-size: 20px;
     
+    text-align: center;
     flex-basis: 50%;
 }
 
@@ -1239,7 +1240,11 @@ ul li{
 
     .bloc-7-left{
         flex-basis: 100%;
+
         
+    }
+    .bloc-7-right{
+        display: none;
     }
 
     .google_map{
@@ -1291,6 +1296,15 @@ ul li{
     }
 
     .google_map{
+        display: none;
+    }
+
+    .bloc-7-left{
+        text-align: left;
+        max-width: 80%;
+    }
+
+    .bloc-7-right{
         display: none;
     }
 }
