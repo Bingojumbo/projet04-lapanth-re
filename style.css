@@ -1041,6 +1041,8 @@ h4 {
 }
 
 
+
+
 #text_presentation_bloc-2{
     font-size: 2rem;
     width: 60%;
@@ -1057,14 +1059,15 @@ h4 {
     display: flex;
 }
 
-.navbar-header{
-    padding-left: 3%;
+.google_map{
+    
+    width: 100%;
+    height: 491px;
+    margin-left: 5%;
 }
 
-.contact_nav{
-    margin: 0;
-    padding: 0;
-    
+#form_1{
+    text-align: center;
 }
 
 
@@ -1102,49 +1105,12 @@ a {
     font-size: 30px;
 }
 
-#bloc-7{
-    
-    display: flex;
-    align-items: center;
-    height: 610px;
-    
-}
-
-.bloc-7-right{
-    margin-left: auto;
-    margin-right: auto;
-    flex-basis: 50%;
-    
-}
 
 
 
-.bloc-7-left{
-    
-    font-size: 20px;
-    
-    text-align: center;
-    flex-basis: 50%;
-}
-
-.google_map{
-   display: block;
-   margin: 0 auto;
-}
-
-#name{
-    width: 100px;
-}
 
 
-.bloc{
-    padding: 0;
-}
 
-.form-group{
-    padding: 5px;
-   
-}
 
 .form-control{
     box-shadow: 3px 3px 3px gray;
@@ -1154,18 +1120,9 @@ a {
     font-size: 15px;
 }
 
-#page_contact{
-    
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#bloc-8{
-    
-    
-    text-align: center;
 
-}
+
 
 #bloc-8 p{
     font-size: 12px;
@@ -1176,17 +1133,6 @@ a {
     margin-right: 7px;
     margin-left: 7px;
     width: auto;
-}
-
-
-.footer_partner{
-    color: white;
-    text-decoration: none;
-    flex-basis: 25%;
-    
-    
-    
-    
 }
 
 ul li{
@@ -1237,40 +1183,20 @@ ul li{
         max-width: 100%;
     }
 
-    #bloc-7{
-       width: auto;
-    }
-
-    .bloc-7-left{
-        flex-basis: 100%;
-
-        
-    }
-    .bloc-7-right{
-        display: none;
-    }
-
-    .google_map{
-        display: none;
-    }
+   
 }
 
 @media all and (max-width: 767px) {
 
-    .navbar-header{
-        text-align: center;
+    
+
+    .navbar-nav{
+        display: block;
     }
 
-    .contact_nav{
-        max-width: 100%;
-        
-         
-    }
+    
 
-    .nav > li{
-        background: none;
-        border-bottom: none;
-    }
+    
 
     .navbar .nav{
         border-top: none;
@@ -1292,24 +1218,15 @@ ul li{
         display: block;
     }
 
-    .footer_partner{
-        flex-basis: 34%;
-        margin-left: 10%;
-        flex-wrap: wrap;
-    }
+    
 
     .google_map{
         display: none;
     }
 
-    .bloc-7-left{
-        text-align: left;
-        max-width: 80%;
-    }
+    
 
-    .bloc-7-right{
-        display: none;
-    }
+    
 }
 
 

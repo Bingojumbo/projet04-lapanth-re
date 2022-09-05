@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
 	
@@ -24,7 +24,7 @@
 </head>
 <body>
 <!-- Principal conteneur -->
-<div class="page-container" id="page_contact">
+<div class="page-container">
     
 <!-- bloc-0 -->
 <header class="bloc bgc-white l-bloc " id="bloc-0">
@@ -34,11 +34,13 @@
 			<div class="navbar-header">
 				
 				<img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthère" height="40" />
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				
 				
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav contact_nav">
+				<ul class="site-navigation nav navbar-nav">
 					
 					<li>
 						<a href="index.html">Acceuil</a>
@@ -51,6 +53,7 @@
 					</li>
 				</ul>
 			</div>
+		</button>
 		</nav>
 	</div>
 </header>
@@ -58,7 +61,7 @@
 
 <!-- bloc-6 -->
 <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-	<div class="container bloc-lg bloc-6-text">
+	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
 				<h1 class="text-center hero-bloc-text tc-white">
@@ -77,7 +80,7 @@
 
 <!-- bloc-7 -->
 <div class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="bloc-7-left">		
+			
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
@@ -114,13 +117,13 @@
 								<option value="Dribbble">Dribbble</option>
 								<option value="Instagram">Instagram</option>
 								<option value="Friend">Ami</option>
-								<option value="Partner">Partenaires</option>
+								<option value="Others">Autre</option>
 							</select>
 						</label>
 						</div>
 						<div class="form-group">
 							<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+							Brief de votre projet (Ajouter autant de détails que nécessaire)<br>
 							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 						</label>
 						</div> 
@@ -129,13 +132,15 @@
 						</button>
 					</form>
 				</div>
-				
+				<div class="col-sm-6">
+					<iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0831363226616!2d4.8301673!3d45.769524100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1661329534735!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="bloc-7-right">
-	<iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0831363226616!2d4.8301673!3d45.769524100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1661329534735!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</div>	
+			
+	
+	
+		
 </div>
 <!-- bloc-7 END -->
 
@@ -157,36 +162,29 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" aria-label="lien vers twitter.com" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" aria-label="lien vers facebook.com" href="https://facebook.com"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" aria-label="lien vers dribbble.com" href="https://dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://instagram.com"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" aria-label="lien vers instagram.com" href="https://instagram.com"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 					
 				</div>
 				
-					<p class="text-center white">Partenaires</p>
-				<nav class="footer_nav">	
-						<ul class="footer_ul">
-							<li><a class="footer_partner" href="voiture.com">voiture.com</a></li>
-							<li><a class="footer_partner" href="pizza.com">pizza.com</a></li>
-							<li><a class="footer_partner" href="matoiture.com">matoiture.com</a></li>
-							<li><a class="footer_partner" href="immobilierseo.com">immobilierseo.com</a></li>
-						</ul>		
-				</nav>
+					
+				
 			</div>
 		</div>
 	</div>
@@ -201,9 +199,9 @@
 </div>
 <!-- Principal conteneur END -->
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
 	<script src="./js/gmaps.js"></script>
